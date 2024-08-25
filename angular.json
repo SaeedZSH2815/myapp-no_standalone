@@ -95,12 +95,22 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap-icons/font/bootstrap.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "43fb1f92-1853-4c05-b658-8bbb49edec2d"
   }
 }

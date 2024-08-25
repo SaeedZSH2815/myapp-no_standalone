@@ -1,0 +1,41 @@
+<table>
+    <tr>
+      <th>{{uc_username}}</th>
+    </tr>
+    <tr>
+      <th>{{uc_password}}</th>
+
+      </tr>
+
+</table>
+
+
+
+<button [disabled]="IsDisable" >button</button>
+
+
+<input  type="text" id="lname" name="lname" (input)="onInputChange($event)" >
+<input type="text" [(ngModel)]='uc_username' >
+
+<br/>
+<br/>
+
+<p [style]="uc_Style"> New Style </p>
+<p [class]="uc_Class"> New Style </p>
+
+<div *ngIf="!IsDisable">Content to render when condition is true.</div>
+
+<button type="button" class="btn btn-primary">Test Button</button>
+<button type="button"  class="btn btn-primary" (click)="btnOnClick()">Add New User</button>
+<h4 *ngFor="let useritem of uc_userList;let i=index;trackBy: trackbyFunc">{{i + "."+ useritem.usname}}</h4>
+<br/>
+
+<div [ngSwitch]="SwitchProperty">
+ <app-switch-case-one *ngSwitchCase="'Case One'"></app-switch-case-one>
+ <app-switch-case-two *ngSwitchCase="'Case Two'"></app-switch-case-two>
+</div>
+
+<ng-template ngIf="!IsDisable">
+  <p>Hip!</p>
+</ng-template>
+
