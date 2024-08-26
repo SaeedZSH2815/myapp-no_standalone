@@ -38,4 +38,22 @@
 <ng-template ngIf="!IsDisable">
   <p>Hip!</p>
 </ng-template>
+<ul>
+ <li *ngFor="let user of uc_ListRatio; index as i; first as isF">
+  {{i}}/{{uc_ListRatio.length}}. {{user}} <span *ngIf="isF">default</span>
+ </li>
+</ul>
+<br/>
+
+
+<app-product-type *ngFor="let product of productlist; index as i; first as isF"
+                   [ProductName] = product.ProductName
+
+                   (ProductClick)="OnEventClick($event)"
+
+                   >
+
+</app-product-type>
+
+
 

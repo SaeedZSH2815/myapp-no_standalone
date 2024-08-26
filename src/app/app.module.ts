@@ -8,6 +8,7 @@ import {FormsModule} from '@angular/forms';
 import { SwitchCaseOneComponent } from './switch-case-one/switch-case-one.component';
 import { SwitchCaseTwoComponent } from './switch-case-two/switch-case-two.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { ProductTypeComponent } from './product-type/product-type.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     AppComponent,
     UsersComponent,
     SwitchCaseOneComponent,
-    SwitchCaseTwoComponent
+    SwitchCaseTwoComponent,
+    ProductTypeComponent
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,14 @@ export class UsersComponent implements OnInit {
   uc_Style = {};
   uc_Class = {};
 
+  uc_ListRatio : string[]=["20","30"];
+
+  productlist : any =[
+    {
+      id:1,
+      ProductName:'Sport'
+    },
+  ];
   uc_userList : any =[
 
     {
@@ -44,12 +52,15 @@ export class UsersComponent implements OnInit {
     }
 
 
+
   }
 
 
 
 
-
+   public OnEventClick(clPN : string){
+      console.log("Log :" + clPN);
+    }
 
   public onInputChange(e : Event ){
     this.uc_username = (e.target as HTMLInputElement).value;
