@@ -16,9 +16,9 @@ export class ProductTypeComponent implements OnInit {
 
 
 
-    public OnClick(){
+    public OnClick(cln : string){
       console.log(this.pt_ProductName);
-      console.log("this.pt_ProductName");
+      console.log(cln);
       this.ProductClick.emit(this.pt_ProductName);
 
     }

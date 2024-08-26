@@ -14,8 +14,8 @@
 <button [disabled]="IsDisable" >button</button>
 
 
-<input  type="text" id="lname" name="lname" (input)="onInputChange($event)" >
-<input type="text" [(ngModel)]='uc_username' >
+<input #LastName type="text" id="lname" name="lname" (input)="onInputChange($event)" >
+<input  type="text" [(ngModel)]='uc_username' >
 
 <br/>
 <br/>
@@ -55,5 +55,6 @@
 
 </app-product-type>
 
+<div app-book-type ></div>
 
 

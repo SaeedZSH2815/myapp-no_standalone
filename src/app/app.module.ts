@@ -9,6 +9,7 @@ import { SwitchCaseOneComponent } from './switch-case-one/switch-case-one.compon
 import { SwitchCaseTwoComponent } from './switch-case-two/switch-case-two.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProductTypeComponent } from './product-type/product-type.component';
+import { BookTypeComponent } from './book-type/book-type.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ProductTypeComponent } from './product-type/product-type.component';
     UsersComponent,
     SwitchCaseOneComponent,
     SwitchCaseTwoComponent,
-    ProductTypeComponent
+    ProductTypeComponent,
+    BookTypeComponent
   ],
   imports: [
     BrowserModule,
