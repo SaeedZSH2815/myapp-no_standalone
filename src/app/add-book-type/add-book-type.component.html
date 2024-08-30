@@ -1,0 +1,24 @@
+<form>
+  <p id="p1" class="Label" > Component Add User </p>
+  <div class="form-group" [style]="bc_Styles" >
+    <label for="exampleInputEmail1">Book ID</label>
+    <input #bc_BookName type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Book ID">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-group" >
+    <label for="exampleInputPassword1">Book Name</label>
+    <input #bc_BookId type="text" class="form-control" id="exampleInputPassword1" placeholder="Book Name">
+  </div>
+
+  <div class="form-check" [style]="'font-size:1rem'">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <br/>
+
+  <button type="submit" class="btn btn-primary" [style.font-size.rem]="'1'"
+     (click)="btnSaveBookClick(bc_BookName.value,bc_BookId.value,$event)"
+    >Submit</button>
+
+</form>

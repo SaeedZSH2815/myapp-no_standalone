@@ -10,6 +10,12 @@ import { SwitchCaseTwoComponent } from './switch-case-two/switch-case-two.compon
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProductTypeComponent } from './product-type/product-type.component';
 import { BookTypeComponent } from './book-type/book-type.component';
+import { AddBookTypeComponent } from './add-book-type/add-book-type.component';
+import { BookTypeTableListComponent } from './book-type-table-list/book-type-table-list.component';
+import { IncComponentComponent } from './inc-component/inc-component.component';
+import { SetBackgroundColorDirective } from './Directive/set-background-color.directive';
+import { CarouselDirectiveDirective } from './Directive/carousel-directive.directive';
+import { PasswordLengthDetectorInputDirective } from './Directive/password-length-detector-input.directive';
 
 
 @NgModule({
@@ -19,7 +25,13 @@ import { BookTypeComponent } from './book-type/book-type.component';
     SwitchCaseOneComponent,
     SwitchCaseTwoComponent,
     ProductTypeComponent,
-    BookTypeComponent
+    BookTypeComponent,
+    AddBookTypeComponent,
+    BookTypeTableListComponent,
+    IncComponentComponent,
+    SetBackgroundColorDirective,
+    CarouselDirectiveDirective,
+    PasswordLengthDetectorInputDirective
   ],
   imports: [
     BrowserModule,

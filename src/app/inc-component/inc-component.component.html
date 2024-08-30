@@ -1,0 +1,29 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+
+ <html lang="en">
+  <head>
+    <title>example</title>
+</head>
+ <body>
+  <p #pTag id="p6">IncComponent</p>
+
+  <p >{{ic_RecordCount}}</p>
+  <button (click)="RecordOnClick()">Add Increment</button>
+   <br/>
+   <br/>
+   <ng-content></ng-content>
+   <p appSetBackgroundColor>SetBackground Directive</p>
+
+
+   <p *ngIf="2<3">2 less 3</p>
+   <div *ngFor="let item of applist">
+    <p>{{item}}</p>
+   </div>
+</body>
+</html>
+
+
+
+
+

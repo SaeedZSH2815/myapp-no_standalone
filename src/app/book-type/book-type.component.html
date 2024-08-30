@@ -1,25 +1,10 @@
- <div class="container-fluid">
-<form>
-
-  <div class="form-group" [style]="bc_Styles" >
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-
-  <div class="form-group" >
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-
-  <div class="form-check" [style]="'font-size:1rem'">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <br/>
-
-  <button type="submit" class="btn btn-primary" [style.font-size.rem]="'1'">Submit</button>
-
-</form>
+ <div class="container-fluid" [style.margin]="'35px'">
+ <p  class="Label" >List Add User--------------</p>
+ <app-add-book-type
+                 [cb_BookTypeList] = "cb_BookTypeList"
+                 (AddUserEvent)="UpdateUserList($event)"></app-add-book-type>
+ <app-book-type-table-list [btlc_BookList] = "cb_BookTypeList"></app-book-type-table-list>
 
 </div>
+
+

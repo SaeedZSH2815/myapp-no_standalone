@@ -1,5 +1,6 @@
 import { Component, OnInit, Input,numberAttribute, booleanAttribute, Output, EventEmitter } from '@angular/core';
 
+
 @Component({
   selector: 'app-product-type',
   templateUrl: './product-type.component.html',
