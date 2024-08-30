@@ -22,7 +22,11 @@
      <td>
       <label for="password">password</label>
 
-      <input appPasswordLengthDetectorInput  type="text" id="password" name="password" >
+      <input appPasswordLengthDetectorInput [DefaultValue]="'Default Value'"
+         type="text" id="password" name="password" >
      </td>
   </tr>
 </table>
+<br/>
+
+<p *appHideAfterDirective="5">    Hidsfdfdfdsfdsfds</p>

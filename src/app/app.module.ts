@@ -16,6 +16,7 @@ import { IncComponentComponent } from './inc-component/inc-component.component';
 import { SetBackgroundColorDirective } from './Directive/set-background-color.directive';
 import { CarouselDirectiveDirective } from './Directive/carousel-directive.directive';
 import { PasswordLengthDetectorInputDirective } from './Directive/password-length-detector-input.directive';
+import { HideAfterDirectiveDirective } from './Directive/hide-after-directive.directive';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PasswordLengthDetectorInputDirective } from './Directive/password-lengt
     IncComponentComponent,
     SetBackgroundColorDirective,
     CarouselDirectiveDirective,
-    PasswordLengthDetectorInputDirective
+    PasswordLengthDetectorInputDirective,
+    HideAfterDirectiveDirective
   ],
   imports: [
     BrowserModule,
